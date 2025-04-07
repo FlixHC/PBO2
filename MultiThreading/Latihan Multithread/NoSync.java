@@ -7,6 +7,18 @@ public class Nosync {
     }
 }
 
+public class TwoString {
+    static void print (String str1, String str2){
+        System.out.print(str1);
+        try{
+            Thread.sleep(500);
+        }
+        catch (InterruptedException e){
+        }
+        System.out.print(str2);
+    }
+}
+
 public class PritnStringThreads implements Runnable {
     Thread thread;
     String str1, str2;
