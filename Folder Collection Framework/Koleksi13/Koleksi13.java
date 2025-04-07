@@ -21,6 +21,16 @@ public class Koleksi13 {
         JButton addButton = new JButton ("Tambah");
         JButton removeButton = new JButton ("Hapus");
         JButton editButton = new JButton ("Ubah");
+
+        table.getSelectionModel().addListSelectionListener(event -> { //Membaca ketika list dipilih
+        int selectedRow = table.getSelectedRow();
+        if (selectedRow != -1) {
+        String selectedName = table.getValueAt(selectedRow, 0).toString();
+        String selectedPrice = table.getValueAt(selectedRow, 1).toString();
+        nameField.setText(selectedName);
+        priceField.setText(selectedPrice);
+    }
+});
         
         addButton.addActionListener (e ->{
 
