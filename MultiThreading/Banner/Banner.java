@@ -34,7 +34,7 @@ public class Banner {
             }
 
             @Override
-            protected void paintComponent(Graphics style) { // Function paintComponent Graphic, drawString dan StringBuilder disediakan javax.swing
+            public void paintComponent(Graphics style) { // Function paintComponent Graphic, drawString dan StringBuilder disediakan javax.swing
                 super.paintComponent(style);
                 style.setColor(Color.BLUE); // Set warna
                 style.setFont(new Font("Times New Roman", Font.BOLD, 15)); // Set font & style
