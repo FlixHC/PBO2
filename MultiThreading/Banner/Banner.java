@@ -11,7 +11,7 @@ public class Banner {
         JPanel panel = new JPanel() {
             ArrayList<Character> chars = new ArrayList<>();
             {
-                String text = "Felix Hartono";
+                String text = "Felix";
 
                 for (int i = 0; i < text.length(); i++) { //Memuat karakter sesuai jumlah yang dimasukkan
                     chars.add(text.charAt(i));
@@ -44,7 +44,7 @@ public class Banner {
                     sb.append(chars.get(i));
                 }
 
-                style.drawString(sb.toString(), 50, 60); 
+                style.drawString(sb.toString(), 70, 70); 
             }
         };
 
